@@ -90,7 +90,7 @@ static Key keys[] = {
   	{ MODKEY,                       XK_F2,     spawn,          {.v = downvol } },
   	{ MODKEY,                       XK_F4,     spawn,          {.v = mutevol } },
   	{ MODKEY,                       XK_F1,     spawn,          {.v = mixercmd } },
-  	{ ShiftMask,                    XK_l,      spawn,          {.v = lockcmd } },
+  	{ MODKEY|ShiftMask,             XK_l,      spawn,          {.v = lockcmd } },
   	{ MODKEY,			XK_Print,  spawn,	   SHCMD("maim pic-full-$(date '+%y%m%d-%H%M-%S').png") },
   	{ ShiftMask,			XK_Print,  spawn,	   SHCMD("maim -s | xclip -selection clipboard -t image/png") },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
